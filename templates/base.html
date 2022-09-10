@@ -20,10 +20,12 @@
     <!-- wikmd custom -->
     <link rel="stylesheet" type="text/css" href="/static/css/wiki.colors.css">
     <link rel="stylesheet" type="text/css" href="/static/css/wiki.css">
+    
     {% if system.darktheme == True %}
         <link rel="stylesheet" type="text/css" href="/static/css/wiki.dark.css">
     {% endif %}
 
+    
     {% block head %}
 
     {% endblock %}
@@ -99,9 +101,9 @@
 
         <!-- Content -->
         <div class="container mt-3">
-                {% block content %}
+            {% block content %}
 
-                {% endblock %}
+            {% endblock %}
         </div>
 
         <!-- Footer -->

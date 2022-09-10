@@ -1,64 +1,99 @@
 @import "wiki.colors.css";
 
 body {
-    background-color: var(--bg-light);
-    color: var(--txt-light);
+  background-color: var(--bg-light);
+  color: var(--txt-light);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.btn-detail {
+  width: 98px;
+  height: 38px;
+}
+
+/* make the buttons stack in a column on smaller screens */
+@media only screen and (max-width: 580px) {
+  .btn-container {
+    display: inline-block;
+  }
 }
 
 .modal-content {
-    background-color: var(--bg-modal-light);
-    color: var(--txt-light);
+  background-color: var(--bg-modal-light);
+  color: var(--txt-light);
 }
 
 blockquote {
-    padding: 0 50px;
-    margin-left: 0;
-    border-left: 4px solid var(--quotes-color);
+  padding: 0 50px;
+  margin-left: 0;
+  border-left: 4px solid var(--quotes-color);
 }
 
-code, pre {
-    font-family: monospace;
-    font-size: 14px
+code,
+pre {
+  font-family: monospace;
+  font-size: 14px;
 }
 
 pre {
-    background-color: var(--bg-codeblock-light);
-    padding: 6px;
-    border-radius: 6px;
+  background-color: var(--bg-codeblock-light);
+  padding: 6px;
+  border-radius: 6px;
 }
 
 img {
-    max-width: 100%
+  max-width: 100%;
 }
 
 figure {
-    text-align: center
+  text-align: center;
 }
 
 .container-fluid {
-    padding-right: 0;
-    padding-left: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .hljs {
-    background-color: var(--bg-codeblock-light);
+  background-color: var(--bg-codeblock-light);
 }
 
-
 table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 10px 0px;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0px;
 }
 
 th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    border-bottom: 2px solid #dee2e6;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  border-bottom: 2px solid #dee2e6;
 }
 
 td {
-    padding: 12px;
-    border-top: 1px solid #dee2e6;
+  padding: 12px;
+  border-top: 1px solid #dee2e6;
 }
